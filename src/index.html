@@ -1,0 +1,88 @@
+<!-- App -->
+<div id="app" class="my-5 text-center"></div>
+
+<!-- Explanation -->
+<div class="container mb-5">
+  <p class="lead font-italic">
+    View this app's source on
+    <a
+      href="https://github.com/tywmick/drum-machine"
+      target="_blank"
+      rel="noopener"
+      >GitHub</a
+    >
+    or
+    <a
+      href="https://codepen.io/tywmick/pen/zYOaPyW"
+      target="_blank"
+      rel="noopener"
+      >CodePen</a
+    >.
+  </p>
+
+  <h1 class="mt-4">Drum machine</h1>
+
+  <p>
+    I created this app in fulfillment of
+    <a href="https://freecodecamp.org" target="_blank" rel="noopener"
+      >freeCodeCamp</a
+    >'s Front End Libraries Project
+    <a
+      href="https://www.freecodecamp.org/learn/front-end-libraries/front-end-libraries-projects/build-a-drum-machine"
+      target="_blank"
+      rel="noopener"
+      >Build a Drum Machine</a
+    >, using
+    <a href="https://reactjs.org/" target="_blank" rel="noopener">React</a>,
+    <a href="https://getbootstrap.com/" target="_blank" rel="noopener"
+      >Bootstrap</a
+    >, and
+    <a
+      href="https://codepen.io/freeCodeCamp/pen/MJyNMd?editors=0010"
+      target="_blank"
+      rel="noopener"
+      >freeCodeCamp's drum sounds</a
+    >. It fulfills the following user stories:
+  </p>
+
+  <ol>
+    <li>
+      I should be able to see an outer container with a corresponding
+      <code>id="drum-machine"</code> that contains all other elements.
+    </li>
+    <li>
+      Within <code>#drum-machine</code> I can see an element with a
+      corresponding <code>id="display"</code>.
+    </li>
+    <li>
+      Within <code>#drum-machine</code> I can see 9 clickable drum pad elements,
+      each with a class name of <code>drum-pad</code>, a unique id that
+      describes the audio clip the drum pad will be set up to trigger, and an
+      inner text that corresponds to one of the following keys on the keyboard:
+      Q, W, E, A, S, D, Z, X, C. The drum pads MUST be in this order.
+    </li>
+    <li>
+      Within each <code>.drum-pad</code>, there should be an HTML5
+      <code>audio</code> element which has a <code>src</code> attribute pointing
+      to an audio clip, a class name of <code>clip</code>, and an id
+      corresponding to the inner text of its parent <code>.drum-pad</code> (e.g.
+      <code>id="Q"</code>, <code>id="W"</code>, <code>id="E"</code> etc.).
+    </li>
+    <li>
+      When I click on a <code>.drum-pad</code> element, the audio clip contained
+      in its child <code>audio</code> element should be triggered.
+    </li>
+    <li>
+      When I press the trigger key associated with each <code>.drum-pad</code>,
+      the audio clip contained in its child <code>audio</code> element should be
+      triggered (e.g. pressing the Q key should trigger the drum pad which
+      contains the string "Q", pressing the W key should trigger the drum pad
+      which contains the string "W", etc.).
+    </li>
+    <li>
+      When a <code>.drum-pad</code> is triggered, a string describing the
+      associated audio clip is displayed as the inner text of the
+      <code>#display</code> element (each string must be unique).
+    </li>
+  </ol>
+</div>
